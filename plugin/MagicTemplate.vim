@@ -33,7 +33,8 @@ fun! s:autoWriteTemplate ()
     endif
 
     if lineNbrs == 1 && filereadable(templateFilePath)
-        if confirm("Auto write template ?", "&Yes\n&No", 1)
+        let choice = confirm("Auto write template ?", "&Yes\n&No", 1)
+        if choice != 2
             call WriteTemplate ( templateFilePath )
         endif
     endif
