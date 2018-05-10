@@ -5,7 +5,9 @@ Author:  TonyChG
 License: MIT
 URL: https://github.com/tonychg/
 
-[![asciicast](https://asciinema.org/a/ZXySrXX4FYhQ556Xuz7G2KgMG.png)](https://asciinema.org/a/ZXySrXX4FYhQ556Xuz7G2KgMG)
+# Demo
+
+[![asciicast](https://asciinema.org/a/eDtQfKgR8yc5rBPbgJTjw4t8L.png)](https://asciinema.org/a/eDtQfKgR8yc5rBPbgJTjw4t8L)
 
 # Usage
 Default templates directory you can change it with:
