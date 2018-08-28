@@ -41,5 +41,4 @@ fun! s:autoWriteTemplate ()
 endfunction
 
 " Templates Write on New File
-autocmd BufNewFile,BufEnter * call s:autoWriteTemplate()
-
+autocmd BufNewFile * call s:autoWriteTemplate()
