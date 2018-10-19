@@ -8,7 +8,7 @@ fun! WriteTemplate( templateFilePath )
     execute "0r ".a:templateFilePath
     execute "%s/$timestamp/".strftime('%m/%d/%y')."/ge"
     execute "%s/$year/".strftime('%Y')."/ge"
-    execute "%s/$user/".$USER."/ge"
+    execute "%s/$user/".'!echo $USER'."/ge"
     execute "%s/$filename/".expand('%:t')."/ge"
 endfunction
 

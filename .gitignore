@@ -1,0 +1,7 @@
+node_modules/
+.*.swp
+.vagrant
+vendor
+*.pyc
+__pycache__
+venv/
