@@ -1,11 +1,15 @@
 " Write Template with relative edit file path
 
+" Change the template directory
 let g:templatesDirectory = $HOME."/Templates/"
 
+" All substitue are here
 fun! WriteTemplate( templateFilePath )
     execute "0r ".a:templateFilePath
-    execute "%s/$timestamp/".strftime('%c')."/ge"
+    execute "%s/$timestamp/".strftime('%m/%d/%y')."/ge"
     execute "%s/$year/".strftime('%Y')."/ge"
+    execute "%s/$user/".$USER."/ge"
+    execute "%s/$filename/".expand('%:t')."/ge"
 endfunction
 
 fun! s:autoWriteTemplate ()
