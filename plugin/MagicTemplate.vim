@@ -44,4 +44,5 @@ fun! s:autoWriteTemplate ()
 endfunction
 
 " Templates Write on New File
-autocmd BufNewFile * call s:autoWriteTemplate()
+" autocmd BufNewFile * call s:autoWriteTemplate()
+nnoremap <silent> <leader>t :call PythonWriteTemplate()<CR>
